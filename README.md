@@ -1,4 +1,4 @@
-# Integrater Yampi Checkout with Shopify
+# Yampi Checkout Integration with Shopify
 
 #### This guide integrater Yampi Checkout Brasil with shopify dropshipping use theme dev by Alothemes
 
