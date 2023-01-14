@@ -48,7 +48,7 @@
         el.style.display = 'none';
     }
 
-    // Cart
+    /* Cart */
     if (currentPage == 'cart') {
         showYampiLoader();
 
@@ -77,7 +77,7 @@
                     window.yampiCheckoutUrl = resp.checkout_direct_url;
 
                     if (resp.skip_cart && resp.checkout_direct_url != '') {
-                        // Limpa o carrinho do Shopify
+                        /* Limpa o carrinho do Shopify */
                         if (resp.fb_fallback && isAndroid() && isFacebookBrowser()) {
                             window.location = ymp_getUrlWithUtms(resp.checkout_direct_url);
 
@@ -134,7 +134,7 @@
                             }
                         }
 
-                        // Tratamento com links dentro do carrinho.
+                        /* Tratamento com links dentro do carrinho. */
                         if (window.$ || window.jQuery) {
                             var btns = $('a.btn-checkout[href="/checkout"]').not('.ymp_elem_mainBtn');
                             btns.hide();
@@ -184,7 +184,7 @@
         return xhr;
     }
 
-    // Product
+    /* Product */
     var ympData = '';
 
     if (window.$ || window.jQuery) {
@@ -219,9 +219,9 @@
                             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
                             xhr.onreadystatechange = function() {
                                 if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-                                    window.location.href = '/cart?ref=yampi_buy_button'
+                                    window.location.href = '/cart?ref=yampi_buy_button';
                                 }
-                            }
+                            };
 
                             xhr.send($(form).serialize());
                         });
@@ -276,7 +276,7 @@
         });
     }
 
-  	function getNewCheckoutURL() {
+    function getNewCheckoutURL() {
         getAjax('/cart.json', function (response) {
             var cartPayload = JSON.parse(response);
 
@@ -295,7 +295,7 @@
         });
     }
 
-    // Verifica se existem botões redirecionando para /a/checkout
+    /* Verifica se existem botões redirecionando para /a/checkout */
     if (window.$ || window.jQuery) {
         var oldLinks = $('a[href="/a/checkout"]').not('.yampi-btn-finalize').addClass('yampi-btn-finalize-single');
 
