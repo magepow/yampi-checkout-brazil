@@ -1,4 +1,6 @@
-# Yampi Checkout Integration with Shopify
+[<img src="https://github.com/magepow/themeforest/blob/master/shopify/shopify_affiliate.jpg" >](https://shopify.pxf.io/VyL446)
+
+## Yampi Checkout Integration with Shopify
 
 #### This guide integrater Yampi Checkout Brasil with shopify dropshipping use theme dev by Alothemes
 
