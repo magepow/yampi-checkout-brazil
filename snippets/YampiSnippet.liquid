@@ -1,15 +1,23 @@
+{% liquid 
+  if template.name != blank
+    assign yampiTemplate = template.name
+  else template != blank
+    assign yampiTemplate = template | replace: '.', '_' | handelize
+  endif 
+%}
+
 <link rel="preconnect" crossorigin href="https://api.dooki.com.br">
 <link rel="preconnect" crossorigin href="https://api.yampi.io">
 
-{% if template.name == 'product' %}
+{% if yampiTemplate == 'product' %}
   <script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
 {% endif %}
 
-{% if template.name == 'index' %}
+{% if yampiTemplate == 'index' %}
   <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
 {% endif %}
 
-{% if template.name == 'search' %}
+{% if yampiTemplate == 'search' %}
   <script src="https://www.mercadopago.com/v2/security.js" view="search"></script>
 {% endif %}
 
@@ -26,7 +34,7 @@
 
 <script type='text/javascript'>
 
-    var currentPage = '{{ template.name }}'
+    var currentPage = '{{ yampiTemplate }}'
         ,   cartEndpoint = 'https://api.dooki.com.br/v2/public/shopify/cart'
         ,   statusEndpoint = 'https://api.dooki.com.br/v2/public/shopify/status'
         ,   shop = '{{ shop.secure_url }}'
