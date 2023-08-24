@@ -13,6 +13,8 @@
 
 <!-- * [Demo](https://easyshopp.me) -->
 * [Checkout Page](https://seguro.easyshopp.me)
+* [Checkout Page](https://seguro.ultillix.com)
+* [Como desinstalar o Checkout da Yampi no Shopify?](https://help.yampi.com.br/pt-BR/articles/6067083-como-desinstalar-o-checkout-da-yampi-no-shopify)
 * [Docs](https://help.revy.io/article/16-yampi-checkout)
 
 ### Setup step by step:
