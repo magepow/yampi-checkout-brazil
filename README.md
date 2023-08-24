@@ -6,9 +6,11 @@
 
 **[Our Shopify Themes](https://themeforest.net/user/alotheme)**
 
+* [Uminex - Fastest Shopify 2.0 Theme](https://1.envato.market/c/1314680/275988/4415?u=https://themeforest.net/item/uminex-fastest-shopify-20-theme/46350215)
+
 * [Dukamarket - Multipurpose Shopify Theme](https://1.envato.market/c/1314680/275988/4415?u=https://themeforest.net/item/dukamarket-multipurpose-shopify-theme/36158349)
 
-* [Davici - Multipurpose Shopify Theme](https://themeforest.net/item/davici-ultimate-shopify-2-theme-rtl-supported/41949840)
+* [Davici - Multipurpose Shopify Theme](https://1.envato.market/c/1314680/275988/4415?u=https://themeforest.net/item/davici-ultimate-shopify-2-theme-rtl-supported/41949840)
 
 
 <!-- * [Demo](https://easyshopp.me) -->
